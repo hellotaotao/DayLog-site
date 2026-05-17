@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LifeLog — Private life companion</title>
+  <meta name="description" content="LifeLog is a local-first private life companion that turns voice and life fragments into journals, memories, reflections, tasks, and decisions.">
+  <meta name="theme-color" content="#08111f">
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    document.documentElement.classList.add('js');
+  </script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <div class="page-shell">
+    <header class="site-header" aria-label="Primary navigation">
+      <a class="brand" href="#top" aria-label="LifeLog home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 36 36" role="img" aria-label="LifeLog mark">
+            <path d="M18 3.6c6.4 0 11.8 4.9 12.5 11.3.8 7.3-4.6 14.1-12.5 17.5C10.1 29 4.7 22.2 5.5 14.9 6.2 8.5 11.6 3.6 18 3.6Z" fill="currentColor" opacity=".18"/>
+            <path d="M12.1 18.4c2.2 0 3.2-7.2 5.9-7.2 2.7 0 3.7 13.6 5.9 13.6 1.6 0 2.5-4.1 3.9-6.4" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </span>
+        <span>LifeLog</span>
+      </a>
+      <nav class="nav-links" aria-label="Page sections">
+        <a href="#how" data-i18n="nav.how">How it works</a>
+        <a href="#features" data-i18n="nav.features">Features</a>
+        <a href="#privacy" data-i18n="nav.privacy">Privacy</a>
+        <a href="#roadmap" data-i18n="nav.roadmap">Roadmap</a>
+      </nav>
+      <div class="header-actions">
+        <button class="language-toggle" type="button" data-lang-toggle aria-label="Switch language">
+          <span data-lang-option="en">English</span>
+          <span class="toggle-divider" aria-hidden="true">/</span>
+          <span data-lang-option="zh">中文</span>
+        </button>
+        <a class="header-cta" href="#waitlist" data-i18n="nav.cta">Join waitlist</a>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero section-pad">
+        <div class="hero-bg" aria-hidden="true"></div>
+        <div class="container hero-grid">
+          <div class="hero-copy reveal">
+            <p class="status-line" data-i18n="hero.status">Coming soon · early prototype</p>
+            <h1 data-i18n="hero.title">Your private life companion for everything you meant to remember.</h1>
+            <p class="hero-subtitle" data-i18n="hero.subtitle">LifeLog continuously captures voice and life fragments, transcribes locally when possible, and turns raw moments into journals, memories, reflections, tasks, decisions, and long-term self-understanding.</p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#waitlist" data-i18n="hero.primaryCta">Get early access</a>
+              <a class="button button-secondary" href="#how" data-i18n="hero.secondaryCta">See how it works</a>
+            </div>
+            <div class="trust-strip" aria-label="Product principles">
+              <span data-i18n="hero.trust.one">Local-first</span>
+              <span data-i18n="hero.trust.two">Offline transcription</span>
+              <span data-i18n="hero.trust.three">Audio stays on device by default</span>
+            </div>
+          </div>
+
+          <div class="hero-visual reveal" aria-label="LifeLog product preview">
+            <div class="orb orb-one" aria-hidden="true"></div>
+            <div class="orb orb-two" aria-hidden="true"></div>
+            <div class="device-card main-card">
+              <div class="card-topline">
+                <span data-i18n="visual.today">Today</span>
+                <span class="live-dot" data-i18n="visual.local">Local</span>
+              </div>
+              <div class="waveform" aria-hidden="true">
+                <span style="--h:34%"></span><span style="--h:76%"></span><span style="--h:48%"></span><span style="--h:88%"></span><span style="--h:42%"></span><span style="--h:70%"></span><span style="--h:55%"></span><span style="--h:92%"></span><span style="--h:44%"></span><span style="--h:64%"></span><span style="--h:38%"></span><span style="--h:80%"></span>
+              </div>
+              <div class="transcript-card">
+                <span class="mini-label" data-i18n="visual.fragmentLabel">Voice fragment</span>
+                <p data-i18n="visual.fragment">“I keep returning to the same decision. Maybe the real signal is what I keep avoiding.”</p>
+              </div>
+              <div class="timeline-preview">
+                <div class="timeline-item active">
+                  <span class="timeline-pin"></span>
+                  <div>
+                    <strong data-i18n="visual.journalTitle">Journal drafted</strong>
+                    <p data-i18n="visual.journalBody">A quiet reflection about choosing focus over urgency.</p>
+                  </div>
+                </div>
+                <div class="timeline-item">
+                  <span class="timeline-pin"></span>
+                  <div>
+                    <strong data-i18n="visual.taskTitle">Task detected</strong>
+                    <p data-i18n="visual.taskBody">Send the project note before Friday.</p>
+                  </div>
+                </div>
+                <div class="timeline-item">
+                  <span class="timeline-pin"></span>
+                  <div>
+                    <strong data-i18n="visual.memoryTitle">Memory linked</strong>
+                    <p data-i18n="visual.memoryBody">Related to April's career decision thread.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="floating-card insight-card">
+              <span class="mini-label" data-i18n="visual.insightLabel">Reflection</span>
+              <p data-i18n="visual.insightBody">You sound most clear after walking outside.</p>
+            </div>
+            <div class="floating-card privacy-card">
+              <span class="shield-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24">
+                  <path d="M12 3.5 19 6v5.2c0 4.4-2.8 7.9-7 9.3-4.2-1.4-7-4.9-7-9.3V6l7-2.5Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+                  <path d="m8.8 12 2 2 4.5-4.7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </span>
+              <span data-i18n="visual.privacy">Private by default</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="positioning section-pad compact-pad">
+        <div class="container split-section reveal">
+          <div>
+            <p class="section-label" data-i18n="positioning.label">Positioning</p>
+            <h2 data-i18n="positioning.title">Not another AI assistant. A memory layer for your own life.</h2>
+          </div>
+          <div class="position-copy">
+            <p data-i18n="positioning.body">Most tools wait for prompts. LifeLog is designed to preserve the fragments you would otherwise lose: passing thoughts, decisions in progress, emotional patterns, and the context behind your days.</p>
+            <div class="statement-list">
+              <span data-i18n="positioning.point.one">From raw logs to meaning</span>
+              <span data-i18n="positioning.point.two">From scattered notes to continuity</span>
+              <span data-i18n="positioning.point.three">From recall to self-understanding</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="how" class="how section-pad">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="section-label" data-i18n="how.label">How it works</p>
+            <h2 data-i18n="how.title">Capture quietly. Understand over time.</h2>
+            <p data-i18n="how.subtitle">LifeLog is designed around a simple loop that respects privacy while making everyday fragments useful.</p>
+          </div>
+          <div class="process-grid">
+            <article class="process-card reveal">
+              <span class="step-number">01</span>
+              <h3 data-i18n="how.step.one.title">Capture life fragments</h3>
+              <p data-i18n="how.step.one.body">Record voice notes, walking thoughts, conversations with yourself, and small observations before they disappear.</p>
+            </article>
+            <article class="process-card reveal">
+              <span class="step-number">02</span>
+              <h3 data-i18n="how.step.two.title">Transcribe locally</h3>
+              <p data-i18n="how.step.two.body">Offline transcription and silence-aware boundaries turn audio into clean text while keeping audio on device by default.</p>
+            </article>
+            <article class="process-card reveal">
+              <span class="step-number">03</span>
+              <h3 data-i18n="how.step.three.title">Shape memory</h3>
+              <p data-i18n="how.step.three.body">Raw logs become journals, timelines, decisions, tasks, and reflections that compound into personal context.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="features" class="features section-pad">
+        <div class="container">
+          <div class="section-heading narrow reveal">
+            <p class="section-label" data-i18n="features.label">Key features</p>
+            <h2 data-i18n="features.title">A calm system for remembering what matters.</h2>
+          </div>
+          <div class="feature-grid">
+            <article class="feature-card large reveal">
+              <div class="feature-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M4 12c0-4.4 3.6-8 8-8s8 3.6 8 8-3.6 8-8 8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M12 8v4l2.8 2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 17.5h5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+              </div>
+              <h3 data-i18n="features.offline.title">Offline transcription</h3>
+              <p data-i18n="features.offline.body">Designed for local-first capture, with on-device transcription where possible so your private audio does not need to leave your machine.</p>
+            </article>
+            <article class="feature-card reveal">
+              <div class="feature-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M6 4.5h9.5L19 8v11.5H6V4.5Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M15 4.5V8h4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M9 12h6M9 15h4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+              </div>
+              <h3 data-i18n="features.journal.title">Automatic journal</h3>
+              <p data-i18n="features.journal.body">Daily fragments can become readable entries that preserve tone, context, and what changed.</p>
+            </article>
+            <article class="feature-card reveal">
+              <div class="feature-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M6 5v14M18 5v14M6 8h12M6 16h12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M10 8v8M14 8v8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+              </div>
+              <h3 data-i18n="features.timeline.title">Memory timeline</h3>
+              <p data-i18n="features.timeline.body">Threads, people, places, moods, and projects become easier to revisit across weeks and years.</p>
+            </article>
+            <article class="feature-card reveal">
+              <div class="feature-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M12 4.5c3.9 0 7 2.8 7 6.2 0 2.1-1.2 4-3 5.1l.5 3.7-3.7-2.3H12c-3.9 0-7-2.8-7-6.5 0-3.4 3.1-6.2 7-6.2Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M9 10.8h6M9 13.6h3.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+              </div>
+              <h3 data-i18n="features.reflection.title">Reflective prompts</h3>
+              <p data-i18n="features.reflection.body">Gentle summaries and questions help you notice recurring patterns without turning LifeLog into a chatbot.</p>
+            </article>
+            <article class="feature-card reveal">
+              <div class="feature-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M5 6.5h14M5 12h14M5 17.5h14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="m8 5 1.3 1.5L12 3.8M8 10.5 9.3 12l2.7-2.7M8 16l1.3 1.5 2.7-2.7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+              <h3 data-i18n="features.tasks.title">Tasks and decisions</h3>
+              <p data-i18n="features.tasks.body">Extract possible follow-ups, open decisions, and commitments from the natural flow of your own speech.</p>
+            </article>
+            <article class="feature-card technical reveal">
+              <div class="feature-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M4 12h3l2-5 4 10 2-5h5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M5 5.5h14v13H5z" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round" opacity=".45"/></svg>
+              </div>
+              <h3 data-i18n="features.tech.title">Signal-aware capture</h3>
+              <p data-i18n="features.tech.body">Overlap-aware transcription, smart segmentation, and VAD/silence-aware boundaries help turn messy audio into dependable life logs.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="privacy" class="privacy section-pad">
+        <div class="container privacy-panel reveal">
+          <div class="privacy-copy">
+            <p class="section-label" data-i18n="privacy.label">Privacy-first</p>
+            <h2 data-i18n="privacy.title">Your life is not training data.</h2>
+            <p data-i18n="privacy.body">LifeLog is being built around a local-first model: audio stays on your device by default, transcription can work offline, and cloud features should be explicit choices rather than hidden assumptions.</p>
+            <ul class="privacy-list">
+              <li data-i18n="privacy.point.one">Default local storage for sensitive audio and transcripts</li>
+              <li data-i18n="privacy.point.two">Clear controls for export, deletion, and future sync</li>
+              <li data-i18n="privacy.point.three">On-device AI where possible, with transparent fallback options</li>
+            </ul>
+          </div>
+          <div class="privacy-stack" aria-label="Privacy architecture preview">
+            <div class="stack-card top">
+              <span data-i18n="privacy.stack.one.label">Device</span>
+              <strong data-i18n="privacy.stack.one.title">Private capture vault</strong>
+            </div>
+            <div class="stack-card middle">
+              <span data-i18n="privacy.stack.two.label">Offline</span>
+              <strong data-i18n="privacy.stack.two.title">Local transcription engine</strong>
+            </div>
+            <div class="stack-card bottom">
+              <span data-i18n="privacy.stack.three.label">Optional</span>
+              <strong data-i18n="privacy.stack.three.title">User-controlled sync later</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="use-cases section-pad">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="section-label" data-i18n="useCases.label">Use cases</p>
+            <h2 data-i18n="useCases.title">For the moments that are too small for documents and too important to lose.</h2>
+          </div>
+          <div class="use-grid">
+            <article class="use-card reveal">
+              <h3 data-i18n="useCases.one.title">Walking thoughts</h3>
+              <p data-i18n="useCases.one.body">Capture ideas while moving, then revisit the strongest themes later.</p>
+            </article>
+            <article class="use-card reveal">
+              <h3 data-i18n="useCases.two.title">Decision trails</h3>
+              <p data-i18n="useCases.two.body">Remember why you chose something, not just what you chose.</p>
+            </article>
+            <article class="use-card reveal">
+              <h3 data-i18n="useCases.three.title">Personal growth</h3>
+              <p data-i18n="useCases.three.body">Notice recurring moods, habits, doubts, and sources of clarity over time.</p>
+            </article>
+            <article class="use-card reveal">
+              <h3 data-i18n="useCases.four.title">Creative notebook</h3>
+              <p data-i18n="useCases.four.body">Turn scattered voice notes into connected material for writing, work, and projects.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="roadmap" class="roadmap section-pad">
+        <div class="container roadmap-grid">
+          <div class="roadmap-intro reveal">
+            <p class="section-label" data-i18n="roadmap.label">Roadmap</p>
+            <h2 data-i18n="roadmap.title">Early prototype now. A deeper companion next.</h2>
+            <p data-i18n="roadmap.subtitle">LifeLog is still forming. The goal is a trustworthy personal memory system before broad launch.</p>
+          </div>
+          <div class="roadmap-list">
+            <article class="roadmap-item reveal">
+              <span data-i18n="roadmap.one.phase">Prototype</span>
+              <h3 data-i18n="roadmap.one.title">Local capture and transcription</h3>
+              <p data-i18n="roadmap.one.body">Polishing the foundation inherited from local-first voice recording and offline transcription work.</p>
+            </article>
+            <article class="roadmap-item reveal">
+              <span data-i18n="roadmap.two.phase">Next</span>
+              <h3 data-i18n="roadmap.two.title">Journal and memory intelligence</h3>
+              <p data-i18n="roadmap.two.body">Better conversion from raw fragments into daily journals, timelines, and decision threads.</p>
+            </article>
+            <article class="roadmap-item reveal">
+              <span data-i18n="roadmap.three.phase">Later</span>
+              <h3 data-i18n="roadmap.three.title">Private companion layer</h3>
+              <p data-i18n="roadmap.three.body">A calmer, context-aware reflection experience that stays grounded in your own life data.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="waitlist" class="cta section-pad">
+        <div class="container cta-panel reveal">
+          <div>
+            <p class="section-label" data-i18n="cta.label">Waitlist</p>
+            <h2 data-i18n="cta.title">Help shape LifeLog before launch.</h2>
+            <p data-i18n="cta.body">Join the early interest list for updates on the private prototype. No signup backend is connected yet; this form is a placeholder for the static landing page.</p>
+          </div>
+          <form class="waitlist-form" data-waitlist-form>
+            <label class="sr-only" for="email" data-i18n="cta.emailLabel">Email address</label>
+            <input id="email" name="email" type="email" autocomplete="email" data-i18n-placeholder="cta.placeholder" placeholder="you@example.com" required>
+            <button class="button button-primary" type="submit" data-i18n="cta.button">Notify me</button>
+            <p class="form-note" data-form-note role="status" aria-live="polite" data-i18n="cta.note">Static placeholder. Your email is not sent anywhere yet.</p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <span>LifeLog</span>
+        <span data-i18n="footer.copy">Private life companion · coming soon</span>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
