@@ -1,7 +1,7 @@
 const translations = {
   en: {
-    metaTitle: "DayLog — Private life companion",
-    metaDescription: "DayLog is a local-first private life companion that turns voice and life fragments into journals, memories, reflections, tasks, and decisions.",
+    metaTitle: "DayLog — Your life, indexed",
+    metaDescription: "DayLog automatically turns everyday moments into searchable private memory with on-device transcription and temporary audio by default.",
     nav: {
       how: "How it works",
       features: "Features",
@@ -11,14 +11,14 @@ const translations = {
     },
     hero: {
       status: "Coming soon · early prototype",
-      title: "Your private life companion for everything you meant to remember.",
-      subtitle: "DayLog continuously captures voice and life fragments, transcribes locally when possible, and turns raw moments into journals, memories, reflections, tasks, decisions, and long-term self-understanding.",
+      title: "Your life, indexed.",
+      subtitle: "DayLog automatically turns everyday moments into searchable private memory — without adding another habit to manage.",
       primaryCta: "Get early access",
       secondaryCta: "See how it works",
       trust: {
         one: "Local-first",
-        two: "Offline transcription",
-        three: "Audio stays on device by default"
+        two: "On-device transcription",
+        three: "Temporary audio by default"
       }
     },
     visual: {
@@ -39,42 +39,42 @@ const translations = {
     positioning: {
       label: "Positioning",
       title: "Not another AI assistant. A memory layer for your own life.",
-      body: "Most tools wait for prompts. DayLog is designed to preserve the fragments you would otherwise lose: passing thoughts, decisions in progress, emotional patterns, and the context behind your days.",
+      body: "Most tools demand a new habit. DayLog works in the background, capturing everyday context and turning it into useful memory when you need it.",
       point: {
-        one: "From raw logs to meaning",
-        two: "From scattered notes to continuity",
-        three: "From recall to self-understanding"
+        one: "From passing moments to searchable context",
+        two: "From near-zero effort to lasting recall",
+        three: "From local transcription to private memory"
       }
     },
     how: {
       label: "How it works",
-      title: "Capture quietly. Understand over time.",
-      subtitle: "DayLog is designed around a simple loop that respects privacy while making everyday fragments useful.",
+      title: "Start once. Let it work.",
+      subtitle: "Turn it on, keep living, and let DayLog build a private memory layer from your day.",
       step: {
         one: {
-          title: "Capture life fragments",
-          body: "Record voice notes, walking thoughts, conversations with yourself, and small observations before they disappear."
+          title: "Capture automatically",
+          body: "Keep everyday moments available without manually starting a note, meeting app, or journaling habit."
         },
         two: {
-          title: "Transcribe locally",
-          body: "Offline transcription and silence-aware boundaries turn audio into clean text while keeping audio on device by default."
+          title: "Transcribe on device",
+          body: "On-device transcription and silence-aware boundaries turn audio into clean text while keeping raw audio temporary by default."
         },
         three: {
-          title: "Shape memory",
-          body: "Raw logs become journals, timelines, decisions, tasks, and reflections that compound into personal context."
+          title: "Organize memory",
+          body: "Private transcripts become journals, timelines, decisions, tasks, and searchable context you can return to later."
         }
       }
     },
     features: {
       label: "Key features",
-      title: "A calm system for remembering what matters.",
+      title: "An automatic memory system with almost no daily overhead.",
       offline: {
-        title: "Offline transcription",
-        body: "Designed for local-first capture, with on-device transcription where possible so your private audio does not need to leave your machine."
+        title: "On-device transcription",
+        body: "Designed around on-device transcription where possible, so private speech can become useful text without defaulting to the cloud."
       },
       journal: {
         title: "Automatic journal",
-        body: "Daily fragments can become readable entries that preserve tone, context, and what changed."
+        body: "Your day can become a readable journal automatically, preserving tone, decisions, and what actually changed."
       },
       timeline: {
         title: "Memory timeline",
@@ -82,7 +82,7 @@ const translations = {
       },
       reflection: {
         title: "Reflective prompts",
-        body: "Gentle summaries and questions help you notice recurring patterns without turning DayLog into a chatbot."
+        body: "Focused summaries and questions help you spot recurring patterns without demanding constant check-ins."
       },
       tasks: {
         title: "Tasks and decisions",
@@ -90,30 +90,30 @@ const translations = {
       },
       tech: {
         title: "Signal-aware capture",
-        body: "Overlap-aware transcription, smart segmentation, and VAD/silence-aware boundaries help turn messy audio into dependable day logs."
+        body: "Overlap-aware transcription, smart segmentation, and VAD/silence-aware boundaries help turn messy audio into reliable searchable memory."
       }
     },
     privacy: {
       label: "Privacy-first",
       title: "Your life is not training data.",
-      body: "DayLog is being built around a local-first model: audio stays on your device by default, transcription can work offline, and cloud features should be explicit choices rather than hidden assumptions.",
+      body: "DayLog is built around a local-first model: transcription can happen on device, raw audio should be temporary by default, and cloud features should be explicit choices rather than hidden assumptions.",
       point: {
-        one: "Default local storage for sensitive audio and transcripts",
-        two: "Clear controls for export, deletion, and future sync",
-        three: "On-device AI where possible, with transparent fallback options"
+        one: "Local-first storage for sensitive transcripts",
+        two: "Clear controls for audio retention, export, deletion, and sync",
+        three: "On-device transcription where possible, with transparent fallback options"
       },
       stack: {
         one: {
           label: "Device",
-          title: "Private capture vault"
+          title: "Temporary audio buffer"
         },
         two: {
           label: "Offline",
-          title: "Local transcription engine"
+          title: "On-device transcription engine"
         },
         three: {
           label: "Optional",
-          title: "User-controlled sync later"
+          title: "User-controlled memory sync later"
         }
       }
     },
@@ -144,7 +144,7 @@ const translations = {
       one: {
         phase: "Prototype",
         title: "Local capture and transcription",
-        body: "Polishing the foundation inherited from local-first voice recording and offline transcription work."
+        body: "Polishing the foundation for local-first audio capture and on-device transcription."
       },
       two: {
         phase: "Next",
@@ -154,7 +154,7 @@ const translations = {
       three: {
         phase: "Later",
         title: "Private companion layer",
-        body: "A calmer, context-aware reflection experience that stays grounded in your own life data."
+        body: "A context-aware memory layer grounded in your own life data, not another tool demanding attention."
       }
     },
     cta: {
@@ -168,12 +168,12 @@ const translations = {
       success: "Saved locally for this demo. A real waitlist backend can be connected later."
     },
     footer: {
-      copy: "Private life companion · coming soon"
+      copy: "Searchable private memory · coming soon"
     }
   },
   zh: {
-    metaTitle: "DayLog — 私人的生活伙伴",
-    metaDescription: "DayLog 是一款 local-first 的私人生活伙伴，把声音与生活片段整理成日记、记忆、反思、任务与决定。",
+    metaTitle: "DayLog — 把生活变成可搜索记忆",
+    metaDescription: "DayLog 自动把日常片段转化为可搜索的私人记忆，并默认强调端侧转写与临时音频。",
     nav: {
       how: "工作方式",
       features: "核心功能",
@@ -183,14 +183,14 @@ const translations = {
     },
     hero: {
       status: "即将推出 · 早期原型",
-      title: "一个为你记住生活细节的私人伙伴。",
-      subtitle: "DayLog 持续捕捉声音与生活片段，在可行时本地转写，并把原始瞬间整理成日记、记忆、反思、任务、决定，以及长期的自我理解。",
+      title: "把你的生活，变成可搜索的记忆。",
+      subtitle: "DayLog 自动把每天的片段转化为可搜索的私人记忆，而且不要求你再养成一个新习惯。",
       primaryCta: "获取早期访问",
       secondaryCta: "了解工作方式",
       trust: {
         one: "Local-first",
-        two: "离线转写",
-        three: "音频默认留在设备上"
+        two: "端侧转写",
+        three: "音频默认临时保留"
       }
     },
     visual: {
@@ -211,42 +211,42 @@ const translations = {
     positioning: {
       label: "定位",
       title: "不是又一个 AI 助手，而是属于你自己的记忆层。",
-      body: "多数工具等待你提问。DayLog 试图保存那些本来会丢失的片段：一闪而过的念头、正在形成的决定、情绪模式，以及每天背后的上下文。",
+      body: "多数工具都要求你养成新习惯。DayLog 在后台工作，捕捉每天的上下文，并在你需要时把它变成有用的记忆。",
       point: {
-        one: "从原始记录到意义",
-        two: "从零散笔记到连续性",
-        three: "从回忆到自我理解"
+        one: "从转瞬即逝到可搜索上下文",
+        two: "从几乎零成本到长期可回看",
+        three: "从端侧转写到私人记忆"
       }
     },
     how: {
       label: "工作方式",
-      title: "安静捕捉，长期理解。",
-      subtitle: "DayLog 围绕一个简单循环而设计：尊重隐私，同时让日常片段变得有用。",
+      title: "打开一次，让它自己工作。",
+      subtitle: "打开 DayLog，继续生活，让它从每天的片段中建立你的私人记忆层。",
       step: {
         one: {
-          title: "捕捉生活片段",
-          body: "记录语音笔记、散步时的想法、自我对话，以及那些很快会消失的小观察。"
+          title: "自动捕捉",
+          body: "不用手动打开笔记、会议工具或日记习惯，也能让日常片段在需要时找得回来。"
         },
         two: {
-          title: "在本地转写",
-          body: "离线转写与感知静音的边界处理，把音频转为清晰文本，同时音频默认保留在设备上。"
+          title: "在设备上转写",
+          body: "端侧转写与静音边界处理，把音频转成清晰文本，同时原始音频默认临时保留。"
         },
         three: {
-          title: "形成个人记忆",
-          body: "原始记录会变成日记、时间线、决定、任务与反思，逐渐积累为个人上下文。"
+          title: "组织个人记忆",
+          body: "私人转写会变成日记、时间线、决定、任务与可搜索上下文，之后随时可以回看。"
         }
       }
     },
     features: {
       label: "核心功能",
-      title: "一个安静地记住重要事物的系统。",
+      title: "一个几乎不增加日常负担的自动记忆系统。",
       offline: {
-        title: "离线转写",
-        body: "围绕 local-first 捕捉而设计，尽可能使用端侧转写，让私人音频不必离开你的设备。"
+        title: "端侧转写",
+        body: "尽可能围绕端侧转写设计，让私人语音先在设备上变成有用文本，而不是默认进入云端。"
       },
       journal: {
         title: "自动日记",
-        body: "每天的片段可以变成可阅读的条目，保留语气、上下文，以及发生了什么变化。"
+        body: "每天的片段可以自动变成可读日记，保留语气、决定，以及真正发生的变化。"
       },
       timeline: {
         title: "记忆时间线",
@@ -254,7 +254,7 @@ const translations = {
       },
       reflection: {
         title: "反思提示",
-        body: "温和的总结与问题帮助你看见重复出现的模式，而不是把 DayLog 变成聊天机器人。"
+        body: "聚焦的总结与问题帮助你看见反复出现的模式，而不是不断要求你回复和确认。"
       },
       tasks: {
         title: "任务与决定",
@@ -262,30 +262,30 @@ const translations = {
       },
       tech: {
         title: "感知信号的捕捉",
-        body: "重叠感知转写、智能分段，以及 VAD/静音感知边界，帮助把混乱音频变成可靠的生活记录。"
+        body: "重叠感知转写、智能分段，以及 VAD/静音边界，帮助把混乱音频变成可靠的可搜索记忆。"
       }
     },
     privacy: {
       label: "隐私优先",
       title: "你的生活不是训练数据。",
-      body: "DayLog 正围绕 local-first 模型构建：音频默认留在设备上，转写可以离线完成，云端能力应当是明确选择，而不是隐藏假设。",
+      body: "DayLog 围绕 local-first 模型构建：转写可以在设备上完成，原始音频默认应当临时保留，云端能力必须是明确选择，而不是隐藏假设。",
       point: {
-        one: "敏感音频与转写文本默认本地保存",
-        two: "为导出、删除与未来同步提供清晰控制",
-        three: "尽可能使用端侧 AI，并透明说明备选方案"
+        one: "敏感转写文本优先本地保存",
+        two: "清晰控制音频保留、导出、删除与同步",
+        three: "尽可能使用端侧转写，并透明说明备选方案"
       },
       stack: {
         one: {
           label: "设备",
-          title: "私密捕捉保险库"
+          title: "临时音频缓冲区"
         },
         two: {
           label: "离线",
-          title: "本地转写引擎"
+          title: "端侧转写引擎"
         },
         three: {
           label: "可选",
-          title: "未来由用户控制的同步"
+          title: "由用户控制的记忆同步"
         }
       }
     },
@@ -316,7 +316,7 @@ const translations = {
       one: {
         phase: "原型",
         title: "本地捕捉与转写",
-        body: "打磨从 local-first 录音与离线转写项目中延展出来的基础能力。"
+        body: "打磨从 local-first 音频捕捉与端侧转写能力中延展出来的基础。"
       },
       two: {
         phase: "下一步",
@@ -340,7 +340,7 @@ const translations = {
       success: "已为这个演示保存在本地。之后可以接入真正的 waitlist 后端。"
     },
     footer: {
-      copy: "私人生活伙伴 · 即将推出"
+      copy: "可搜索的私人记忆 · 即将推出"
     }
   }
 };
