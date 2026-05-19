@@ -29,6 +29,7 @@
         <a href="#features" data-i18n="nav.features">Features</a>
         <a href="#privacy" data-i18n="nav.privacy">Privacy</a>
         <a href="#roadmap" data-i18n="nav.roadmap">Roadmap</a>
+        <a href="#notes" data-i18n="nav.notes">Notes</a>
       </nav>
       <div class="header-actions">
         <button class="language-toggle" type="button" data-lang-toggle aria-label="Switch language">
@@ -36,7 +37,7 @@
           <span class="toggle-divider" aria-hidden="true">/</span>
           <span data-lang-option="zh">中文</span>
         </button>
-        <a class="header-cta" href="#waitlist" data-i18n="nav.cta">Join waitlist</a>
+        <a class="header-cta" href="#notes" data-i18n="nav.cta">Read notes</a>
       </div>
     </header>
 
@@ -49,7 +50,7 @@
             <h1 data-i18n="hero.title">Your life, indexed.</h1>
             <p class="hero-subtitle" data-i18n="hero.subtitle">DayLog automatically turns everyday moments into searchable private memory — without adding another habit to manage.</p>
             <div class="hero-actions">
-              <a class="button button-primary" href="#waitlist" data-i18n="hero.primaryCta">Get early access</a>
+              <a class="button button-primary" href="/concept/" data-i18n="hero.primaryCta">Read the concept</a>
               <a class="button button-secondary" href="#how" data-i18n="hero.secondaryCta">See how it works</a>
             </div>
             <div class="trust-strip" aria-label="Product principles">
@@ -295,19 +296,30 @@
         </div>
       </section>
 
-      <section id="waitlist" class="cta section-pad">
+      <section id="notes" class="cta section-pad">
         <div class="container cta-panel reveal">
           <div>
-            <p class="section-label" data-i18n="cta.label">Waitlist</p>
-            <h2 data-i18n="cta.title">Help shape DayLog before launch.</h2>
-            <p data-i18n="cta.body">Join the early interest list for updates on the private prototype. No signup backend is connected yet; this form is a placeholder for the static landing page.</p>
+            <p class="section-label" data-i18n="cta.label">Product notes</p>
+            <h2 data-i18n="cta.title">The thinking behind DayLog.</h2>
+            <p data-i18n="cta.body">DayLog is actively being shaped. These notes keep the homepage clean while making the product principles, privacy model, and use cases easier to explore.</p>
           </div>
-          <form class="waitlist-form" data-waitlist-form>
-            <label class="sr-only" for="email" data-i18n="cta.emailLabel">Email address</label>
-            <input id="email" name="email" type="email" autocomplete="email" data-i18n-placeholder="cta.placeholder" placeholder="you@example.com" required>
-            <button class="button button-primary" type="submit" data-i18n="cta.button">Notify me</button>
-            <p class="form-note" data-form-note role="status" aria-live="polite" data-i18n="cta.note">Static placeholder. Your email is not sent anywhere yet.</p>
-          </form>
+          <div class="note-link-grid">
+            <a class="note-link-card" href="/concept/">
+              <span>Concept</span>
+              <strong data-i18n="cta.card.one.title">Why DayLog exists</strong>
+              <p data-i18n="cta.card.one.body">A memory layer that works without adding another habit.</p>
+            </a>
+            <a class="note-link-card" href="/privacy/">
+              <span>Privacy</span>
+              <strong data-i18n="cta.card.two.title">Temporary audio, durable memory</strong>
+              <p data-i18n="cta.card.two.body">Why on-device transcription and audio retention matter.</p>
+            </a>
+            <a class="note-link-card" href="/notes/without-another-habit/">
+              <span>Note</span>
+              <strong data-i18n="cta.card.three.title">Without another habit</strong>
+              <p data-i18n="cta.card.three.body">The real cost of productivity tools is attention.</p>
+            </a>
+          </div>
         </div>
       </section>
     </main>

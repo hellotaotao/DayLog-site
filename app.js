@@ -7,13 +7,14 @@ const translations = {
       features: "Features",
       privacy: "Privacy",
       roadmap: "Roadmap",
-      cta: "Join waitlist"
+      notes: "Notes",
+      cta: "Read notes"
     },
     hero: {
       status: "Coming soon · early prototype",
       title: "Your life, indexed.",
       subtitle: "DayLog automatically turns everyday moments into searchable private memory — without adding another habit to manage.",
-      primaryCta: "Get early access",
+      primaryCta: "Read the concept",
       secondaryCta: "See how it works",
       trust: {
         one: "Local-first",
@@ -158,14 +159,23 @@ const translations = {
       }
     },
     cta: {
-      label: "Waitlist",
-      title: "Help shape DayLog before launch.",
-      body: "Join the early interest list for updates on the private prototype. No signup backend is connected yet; this form is a placeholder for the static landing page.",
-      emailLabel: "Email address",
-      placeholder: "you@example.com",
-      button: "Notify me",
-      note: "Static placeholder. Your email is not sent anywhere yet.",
-      success: "Saved locally for this demo. A real waitlist backend can be connected later."
+      label: "Product notes",
+      title: "The thinking behind DayLog.",
+      body: "DayLog is actively being shaped. These notes keep the homepage clean while making the product principles, privacy model, and use cases easier to explore.",
+      card: {
+        one: {
+          title: "Why DayLog exists",
+          body: "A memory layer that works without adding another habit."
+        },
+        two: {
+          title: "Temporary audio, durable memory",
+          body: "Why on-device transcription and audio retention matter."
+        },
+        three: {
+          title: "Without another habit",
+          body: "The real cost of productivity tools is attention."
+        }
+      }
     },
     footer: {
       copy: "Searchable private memory · coming soon"
@@ -179,13 +189,14 @@ const translations = {
       features: "核心功能",
       privacy: "隐私",
       roadmap: "路线图",
-      cta: "加入等待名单"
+      notes: "产品笔记",
+      cta: "阅读笔记"
     },
     hero: {
       status: "即将推出 · 早期原型",
       title: "把你的生活，变成可搜索的记忆。",
       subtitle: "DayLog 自动把每天的片段转化为可搜索的私人记忆，而且不要求你再养成一个新习惯。",
-      primaryCta: "获取早期访问",
+      primaryCta: "阅读理念",
       secondaryCta: "了解工作方式",
       trust: {
         one: "Local-first",
@@ -330,14 +341,23 @@ const translations = {
       }
     },
     cta: {
-      label: "等待名单",
-      title: "在正式发布前，一起塑造 DayLog。",
-      body: "加入早期兴趣名单，获取私人原型的进展更新。当前尚未连接注册后端；这个表单是静态 landing page 的占位。",
-      emailLabel: "邮箱地址",
-      placeholder: "you@example.com",
-      button: "通知我",
-      note: "静态占位：你的邮箱暂时不会被发送到任何地方。",
-      success: "已为这个演示保存在本地。之后可以接入真正的 waitlist 后端。"
+      label: "产品笔记",
+      title: "DayLog 背后的产品思考。",
+      body: "DayLog 还在主动形成中。这些笔记让首页保持干净，同时把产品原则、隐私模型和使用场景沉淀下来。",
+      card: {
+        one: {
+          title: "DayLog 为什么存在",
+          body: "一个不要求你养成新习惯的记忆层。"
+        },
+        two: {
+          title: "临时音频，长期记忆",
+          body: "为什么端侧转写和音频保留策略很重要。"
+        },
+        three: {
+          title: "不要再增加一个习惯",
+          body: "效率工具真正的成本是注意力。"
+        }
+      }
     },
     footer: {
       copy: "可搜索的私人记忆 · 即将推出"
@@ -393,12 +413,6 @@ function applyLanguage(language) {
     toggle.setAttribute("aria-label", activeLanguage === "zh" ? "切换语言" : "Switch language");
   }
 
-  const formNote = document.querySelector("[data-form-note]");
-  if (formNote && formNote.dataset.state !== "success") {
-    formNote.classList.remove("success");
-    formNote.textContent = dictionary.cta.note;
-  }
-
   localStorage.setItem(storageKey, activeLanguage);
   document.documentElement.classList.add("ready");
 }
@@ -411,22 +425,6 @@ function setupLanguageToggle() {
   toggle.addEventListener("click", () => {
     const nextLanguage = document.documentElement.dataset.locale === "zh" ? "en" : "zh";
     applyLanguage(nextLanguage);
-  });
-}
-
-function setupWaitlistForm() {
-  const form = document.querySelector("[data-waitlist-form]");
-  const note = document.querySelector("[data-form-note]");
-  if (!form || !note) {
-    return;
-  }
-  form.addEventListener("submit", (event) => {
-    event.preventDefault();
-    const language = document.documentElement.dataset.locale || "en";
-    note.dataset.state = "success";
-    note.classList.add("success");
-    note.textContent = translations[language].cta.success;
-    form.reset();
   });
 }
 
@@ -450,7 +448,6 @@ function setupRevealAnimations() {
 function init() {
   applyLanguage(detectInitialLanguage());
   setupLanguageToggle();
-  setupWaitlistForm();
   setupRevealAnimations();
 }
 

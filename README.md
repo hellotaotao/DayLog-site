@@ -6,7 +6,7 @@ A polished bilingual static landing page for the early DayLog product prototype.
 
 - `index.html` — semantic landing page markup
 - `styles.css` — responsive premium SaaS styling, gradients, cards, and motion
-- `app.js` — language detection, language toggle, localStorage persistence, reveal animation, and waitlist placeholder behavior
+- `app.js` — language detection, language toggle, localStorage persistence, and reveal animation
 
 ## Run locally
 
@@ -28,6 +28,6 @@ http://localhost:4173
 - The top-right `English / 中文` control switches language without reloading.
 - The selected language is persisted in `localStorage` under `daylog-language`.
 
-## Waitlist placeholder
+## Product notes and SEO pages
 
-The waitlist form is intentionally static. Submitting the form only shows a local confirmation message; no email is sent anywhere.
+The homepage stays intentionally focused. Deeper product thinking lives in lightweight subpages such as `/concept/`, `/privacy/`, and `/notes/without-another-habit/`. `sitemap.xml` lists the public pages for search engines.
