@@ -174,7 +174,8 @@ const translations = {
         three: {
           title: "Without another habit",
           body: "The real cost of productivity tools is attention."
-        }
+        },
+        read: "Read article →"
       }
     },
     footer: {
@@ -356,7 +357,8 @@ const translations = {
         three: {
           title: "不要再增加一个习惯",
           body: "效率工具真正的成本是注意力。"
-        }
+        },
+        read: "阅读文章 →"
       }
     },
     footer: {
