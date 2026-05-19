@@ -1,0 +1,15 @@
+{
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "lifelog.taotao.au"
+        }
+      ],
+      "destination": "https://daylog.taotao.au/:path*",
+      "permanent": true
+    }
+  ]
+}
