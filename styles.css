@@ -1233,8 +1233,12 @@ img, svg, canvas, video { max-width: 100%; }
 .article-link {
   position: relative;
   display: grid;
-  grid-template-columns: 120px minmax(0, 1.1fr) minmax(220px, .9fr) auto;
-  gap: 18px;
+  grid-template-columns: minmax(90px, 120px) minmax(0, 1fr) auto;
+  grid-template-areas:
+    "kicker title action"
+    "kicker body action";
+  column-gap: 18px;
+  row-gap: 4px;
   align-items: center;
   padding: 20px 0;
   color: var(--text);
@@ -1252,6 +1256,7 @@ img, svg, canvas, video { max-width: 100%; }
 }
 
 .article-kicker {
+  grid-area: kicker;
   color: var(--muted);
   font-size: .74rem;
   font-weight: 800;
@@ -1260,13 +1265,19 @@ img, svg, canvas, video { max-width: 100%; }
 }
 
 .article-link strong {
+  grid-area: title;
   display: block;
+  min-width: 0;
   font-size: 1.08rem;
+  line-height: 1.15;
   letter-spacing: -.02em;
+  overflow-wrap: normal;
   transition: color .2s ease;
 }
 
 .article-link p {
+  grid-area: body;
+  min-width: 0;
   margin: 0;
   color: var(--muted);
   font-size: .94rem;
@@ -1274,6 +1285,7 @@ img, svg, canvas, video { max-width: 100%; }
 }
 
 .article-link em {
+  grid-area: action;
   color: var(--muted);
   font-size: .9rem;
   font-style: normal;
@@ -1428,6 +1440,11 @@ img, svg, canvas, video { max-width: 100%; }
   }
 
   .article-link {
+    grid-template-areas:
+      "kicker"
+      "title"
+      "body"
+      "action";
     gap: 8px;
   }
 
