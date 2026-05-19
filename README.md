@@ -1,6 +1,6 @@
-# LifeLog Static Landing Page
+# DayLog Static Landing Page
 
-A polished bilingual static landing page for the early LifeLog product prototype.
+A polished bilingual static landing page for the early DayLog product prototype.
 
 ## Files
 
@@ -26,7 +26,7 @@ http://localhost:4173
 
 - On first visit, the page uses Simplified Chinese when `navigator.language` starts with `zh`; otherwise it uses English.
 - The top-right `English / 中文` control switches language without reloading.
-- The selected language is persisted in `localStorage` under `lifelog-language`.
+- The selected language is persisted in `localStorage` under `daylog-language`.
 
 ## Waitlist placeholder
 

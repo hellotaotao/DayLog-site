@@ -1,7 +1,7 @@
 const translations = {
   en: {
-    metaTitle: "LifeLog — Private life companion",
-    metaDescription: "LifeLog is a local-first private life companion that turns voice and life fragments into journals, memories, reflections, tasks, and decisions.",
+    metaTitle: "DayLog — Private life companion",
+    metaDescription: "DayLog is a local-first private life companion that turns voice and life fragments into journals, memories, reflections, tasks, and decisions.",
     nav: {
       how: "How it works",
       features: "Features",
@@ -12,7 +12,7 @@ const translations = {
     hero: {
       status: "Coming soon · early prototype",
       title: "Your private life companion for everything you meant to remember.",
-      subtitle: "LifeLog continuously captures voice and life fragments, transcribes locally when possible, and turns raw moments into journals, memories, reflections, tasks, decisions, and long-term self-understanding.",
+      subtitle: "DayLog continuously captures voice and life fragments, transcribes locally when possible, and turns raw moments into journals, memories, reflections, tasks, decisions, and long-term self-understanding.",
       primaryCta: "Get early access",
       secondaryCta: "See how it works",
       trust: {
@@ -39,7 +39,7 @@ const translations = {
     positioning: {
       label: "Positioning",
       title: "Not another AI assistant. A memory layer for your own life.",
-      body: "Most tools wait for prompts. LifeLog is designed to preserve the fragments you would otherwise lose: passing thoughts, decisions in progress, emotional patterns, and the context behind your days.",
+      body: "Most tools wait for prompts. DayLog is designed to preserve the fragments you would otherwise lose: passing thoughts, decisions in progress, emotional patterns, and the context behind your days.",
       point: {
         one: "From raw logs to meaning",
         two: "From scattered notes to continuity",
@@ -49,7 +49,7 @@ const translations = {
     how: {
       label: "How it works",
       title: "Capture quietly. Understand over time.",
-      subtitle: "LifeLog is designed around a simple loop that respects privacy while making everyday fragments useful.",
+      subtitle: "DayLog is designed around a simple loop that respects privacy while making everyday fragments useful.",
       step: {
         one: {
           title: "Capture life fragments",
@@ -82,7 +82,7 @@ const translations = {
       },
       reflection: {
         title: "Reflective prompts",
-        body: "Gentle summaries and questions help you notice recurring patterns without turning LifeLog into a chatbot."
+        body: "Gentle summaries and questions help you notice recurring patterns without turning DayLog into a chatbot."
       },
       tasks: {
         title: "Tasks and decisions",
@@ -90,13 +90,13 @@ const translations = {
       },
       tech: {
         title: "Signal-aware capture",
-        body: "Overlap-aware transcription, smart segmentation, and VAD/silence-aware boundaries help turn messy audio into dependable life logs."
+        body: "Overlap-aware transcription, smart segmentation, and VAD/silence-aware boundaries help turn messy audio into dependable day logs."
       }
     },
     privacy: {
       label: "Privacy-first",
       title: "Your life is not training data.",
-      body: "LifeLog is being built around a local-first model: audio stays on your device by default, transcription can work offline, and cloud features should be explicit choices rather than hidden assumptions.",
+      body: "DayLog is being built around a local-first model: audio stays on your device by default, transcription can work offline, and cloud features should be explicit choices rather than hidden assumptions.",
       point: {
         one: "Default local storage for sensitive audio and transcripts",
         two: "Clear controls for export, deletion, and future sync",
@@ -140,7 +140,7 @@ const translations = {
     roadmap: {
       label: "Roadmap",
       title: "Early prototype now. A deeper companion next.",
-      subtitle: "LifeLog is still forming. The goal is a trustworthy personal memory system before broad launch.",
+      subtitle: "DayLog is still forming. The goal is a trustworthy personal memory system before broad launch.",
       one: {
         phase: "Prototype",
         title: "Local capture and transcription",
@@ -159,7 +159,7 @@ const translations = {
     },
     cta: {
       label: "Waitlist",
-      title: "Help shape LifeLog before launch.",
+      title: "Help shape DayLog before launch.",
       body: "Join the early interest list for updates on the private prototype. No signup backend is connected yet; this form is a placeholder for the static landing page.",
       emailLabel: "Email address",
       placeholder: "you@example.com",
@@ -172,8 +172,8 @@ const translations = {
     }
   },
   zh: {
-    metaTitle: "LifeLog — 私人的生活伙伴",
-    metaDescription: "LifeLog 是一款 local-first 的私人生活伙伴，把声音与生活片段整理成日记、记忆、反思、任务与决定。",
+    metaTitle: "DayLog — 私人的生活伙伴",
+    metaDescription: "DayLog 是一款 local-first 的私人生活伙伴，把声音与生活片段整理成日记、记忆、反思、任务与决定。",
     nav: {
       how: "工作方式",
       features: "核心功能",
@@ -184,7 +184,7 @@ const translations = {
     hero: {
       status: "即将推出 · 早期原型",
       title: "一个为你记住生活细节的私人伙伴。",
-      subtitle: "LifeLog 持续捕捉声音与生活片段，在可行时本地转写，并把原始瞬间整理成日记、记忆、反思、任务、决定，以及长期的自我理解。",
+      subtitle: "DayLog 持续捕捉声音与生活片段，在可行时本地转写，并把原始瞬间整理成日记、记忆、反思、任务、决定，以及长期的自我理解。",
       primaryCta: "获取早期访问",
       secondaryCta: "了解工作方式",
       trust: {
@@ -211,7 +211,7 @@ const translations = {
     positioning: {
       label: "定位",
       title: "不是又一个 AI 助手，而是属于你自己的记忆层。",
-      body: "多数工具等待你提问。LifeLog 试图保存那些本来会丢失的片段：一闪而过的念头、正在形成的决定、情绪模式，以及每天背后的上下文。",
+      body: "多数工具等待你提问。DayLog 试图保存那些本来会丢失的片段：一闪而过的念头、正在形成的决定、情绪模式，以及每天背后的上下文。",
       point: {
         one: "从原始记录到意义",
         two: "从零散笔记到连续性",
@@ -221,7 +221,7 @@ const translations = {
     how: {
       label: "工作方式",
       title: "安静捕捉，长期理解。",
-      subtitle: "LifeLog 围绕一个简单循环而设计：尊重隐私，同时让日常片段变得有用。",
+      subtitle: "DayLog 围绕一个简单循环而设计：尊重隐私，同时让日常片段变得有用。",
       step: {
         one: {
           title: "捕捉生活片段",
@@ -254,7 +254,7 @@ const translations = {
       },
       reflection: {
         title: "反思提示",
-        body: "温和的总结与问题帮助你看见重复出现的模式，而不是把 LifeLog 变成聊天机器人。"
+        body: "温和的总结与问题帮助你看见重复出现的模式，而不是把 DayLog 变成聊天机器人。"
       },
       tasks: {
         title: "任务与决定",
@@ -268,7 +268,7 @@ const translations = {
     privacy: {
       label: "隐私优先",
       title: "你的生活不是训练数据。",
-      body: "LifeLog 正围绕 local-first 模型构建：音频默认留在设备上，转写可以离线完成，云端能力应当是明确选择，而不是隐藏假设。",
+      body: "DayLog 正围绕 local-first 模型构建：音频默认留在设备上，转写可以离线完成，云端能力应当是明确选择，而不是隐藏假设。",
       point: {
         one: "敏感音频与转写文本默认本地保存",
         two: "为导出、删除与未来同步提供清晰控制",
@@ -312,7 +312,7 @@ const translations = {
     roadmap: {
       label: "路线图",
       title: "现在是早期原型，下一步是更深的个人伙伴。",
-      subtitle: "LifeLog 仍在形成中。目标是在广泛发布前，先做出一个值得信任的个人记忆系统。",
+      subtitle: "DayLog 仍在形成中。目标是在广泛发布前，先做出一个值得信任的个人记忆系统。",
       one: {
         phase: "原型",
         title: "本地捕捉与转写",
@@ -331,7 +331,7 @@ const translations = {
     },
     cta: {
       label: "等待名单",
-      title: "在正式发布前，一起塑造 LifeLog。",
+      title: "在正式发布前，一起塑造 DayLog。",
       body: "加入早期兴趣名单，获取私人原型的进展更新。当前尚未连接注册后端；这个表单是静态 landing page 的占位。",
       emailLabel: "邮箱地址",
       placeholder: "you@example.com",
@@ -345,7 +345,7 @@ const translations = {
   }
 };
 
-const storageKey = "lifelog-language";
+const storageKey = "daylog-language";
 const supportedLanguages = ["en", "zh"];
 
 function getNestedValue(source, path) {
