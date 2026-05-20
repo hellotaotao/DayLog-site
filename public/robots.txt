@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://daylog.taotao.au/sitemap.xml
+Sitemap: https://everlog.taotao.au/sitemap.xml

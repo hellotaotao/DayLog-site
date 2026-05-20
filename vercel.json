@@ -8,7 +8,18 @@
           "value": "lifelog.taotao.au"
         }
       ],
-      "destination": "https://daylog.taotao.au/:path*",
+      "destination": "https://everlog.taotao.au/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "daylog.taotao.au"
+        }
+      ],
+      "destination": "https://everlog.taotao.au/:path*",
       "permanent": true
     }
   ]

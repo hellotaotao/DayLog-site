@@ -1,6 +1,6 @@
-# DayLog Site
+# EverLog Site
 
-A minimal Astro site for the early DayLog product prototype.
+A minimal Astro site for the early EverLog product prototype.
 
 ## Project structure
 
@@ -36,7 +36,7 @@ Vercel can build the project with the `build` script, which runs `astro build`.
 
 - On first visit, the homepage uses Simplified Chinese when `navigator.language` starts with `zh`; otherwise it uses English.
 - The top-right `English / 中文` control switches the homepage language without reloading.
-- The selected language is persisted in `localStorage` under `daylog-language`.
+- The selected language is persisted in `localStorage` under `everlog-language`.
 
 ## Product notes and SEO pages
 

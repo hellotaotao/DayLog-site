@@ -1,7 +1,7 @@
 const translations = {
   en: {
-    metaTitle: "DayLog — Your life, indexed",
-    metaDescription: "DayLog automatically turns everyday moments into searchable private memory with on-device transcription and temporary audio by default.",
+    metaTitle: "EverLog — Your life, indexed",
+    metaDescription: "EverLog automatically turns everyday moments into searchable private memory with on-device transcription and temporary audio by default.",
     nav: {
       how: "How it works",
       features: "Features",
@@ -13,7 +13,7 @@ const translations = {
     hero: {
       status: "Coming soon · early prototype",
       title: "Your life, indexed.",
-      subtitle: "DayLog automatically turns everyday moments into searchable private memory — without adding another habit to manage.",
+      subtitle: "EverLog automatically turns everyday moments into searchable private memory — without adding another habit to manage.",
       primaryCta: "Read the concept",
       secondaryCta: "See how it works",
       trust: {
@@ -40,7 +40,7 @@ const translations = {
     positioning: {
       label: "Positioning",
       title: "Not another AI assistant. A memory layer for your own life.",
-      body: "Most tools demand a new habit. DayLog works in the background, capturing everyday context and turning it into useful memory when you need it.",
+      body: "Most tools demand a new habit. EverLog works in the background, capturing everyday context and turning it into useful memory when you need it.",
       point: {
         one: "From passing moments to searchable context",
         two: "From near-zero effort to lasting recall",
@@ -50,7 +50,7 @@ const translations = {
     how: {
       label: "How it works",
       title: "Start once. Let it work.",
-      subtitle: "Turn it on, keep living, and let DayLog build a private memory layer from your day.",
+      subtitle: "Turn it on, keep living, and let EverLog build a private memory layer from your day.",
       step: {
         one: {
           title: "Capture automatically",
@@ -97,7 +97,7 @@ const translations = {
     privacy: {
       label: "Privacy-first",
       title: "Your life is not training data.",
-      body: "DayLog is built around a local-first model: transcription can happen on device, raw audio should be temporary by default, and cloud features should be explicit choices rather than hidden assumptions.",
+      body: "EverLog is built around a local-first model: transcription can happen on device, raw audio should be temporary by default, and cloud features should be explicit choices rather than hidden assumptions.",
       point: {
         one: "Local-first storage for sensitive transcripts",
         two: "Clear controls for audio retention, export, deletion, and sync",
@@ -141,7 +141,7 @@ const translations = {
     roadmap: {
       label: "Roadmap",
       title: "Early prototype now. A deeper companion next.",
-      subtitle: "DayLog is still forming. The goal is a trustworthy personal memory system before broad launch.",
+      subtitle: "EverLog is still forming. The goal is a trustworthy personal memory system before broad launch.",
       one: {
         phase: "Prototype",
         title: "Local capture and transcription",
@@ -160,11 +160,11 @@ const translations = {
     },
     cta: {
       label: "Product notes",
-      title: "The thinking behind DayLog.",
-      body: "DayLog is actively being shaped. These notes keep the homepage clean while making the product principles, privacy model, and use cases easier to explore.",
+      title: "The thinking behind EverLog.",
+      body: "EverLog is actively being shaped. These notes keep the homepage clean while making the product principles, privacy model, and use cases easier to explore.",
       card: {
         one: {
-          title: "Why DayLog exists",
+          title: "Why EverLog exists",
           body: "A memory layer that works without adding another habit."
         },
         two: {
@@ -183,8 +183,8 @@ const translations = {
     }
   },
   zh: {
-    metaTitle: "DayLog — 把生活变成可搜索记忆",
-    metaDescription: "DayLog 自动把日常片段转化为可搜索的私人记忆，并默认强调端侧转写与临时音频。",
+    metaTitle: "EverLog — 把生活变成可搜索记忆",
+    metaDescription: "EverLog 自动把日常片段转化为可搜索的私人记忆，并默认强调端侧转写与临时音频。",
     nav: {
       how: "工作方式",
       features: "核心功能",
@@ -196,7 +196,7 @@ const translations = {
     hero: {
       status: "即将推出 · 早期原型",
       title: "把你的生活，变成可搜索的记忆。",
-      subtitle: "DayLog 自动把每天的片段转化为可搜索的私人记忆，而且不要求你再养成一个新习惯。",
+      subtitle: "EverLog 自动把每天的片段转化为可搜索的私人记忆，而且不要求你再养成一个新习惯。",
       primaryCta: "阅读理念",
       secondaryCta: "了解工作方式",
       trust: {
@@ -223,7 +223,7 @@ const translations = {
     positioning: {
       label: "定位",
       title: "不是又一个 AI 助手，而是属于你自己的记忆层。",
-      body: "多数工具都要求你养成新习惯。DayLog 在后台工作，捕捉每天的上下文，并在你需要时把它变成有用的记忆。",
+      body: "多数工具都要求你养成新习惯。EverLog 在后台工作，捕捉每天的上下文，并在你需要时把它变成有用的记忆。",
       point: {
         one: "从转瞬即逝到可搜索上下文",
         two: "从几乎零成本到长期可回看",
@@ -233,7 +233,7 @@ const translations = {
     how: {
       label: "工作方式",
       title: "打开一次，让它自己工作。",
-      subtitle: "打开 DayLog，继续生活，让它从每天的片段中建立你的私人记忆层。",
+      subtitle: "打开 EverLog，继续生活，让它从每天的片段中建立你的私人记忆层。",
       step: {
         one: {
           title: "自动捕捉",
@@ -280,7 +280,7 @@ const translations = {
     privacy: {
       label: "隐私优先",
       title: "你的生活不是训练数据。",
-      body: "DayLog 围绕 local-first 模型构建：转写可以在设备上完成，原始音频默认应当临时保留，云端能力必须是明确选择，而不是隐藏假设。",
+      body: "EverLog 围绕 local-first 模型构建：转写可以在设备上完成，原始音频默认应当临时保留，云端能力必须是明确选择，而不是隐藏假设。",
       point: {
         one: "敏感转写文本优先本地保存",
         two: "清晰控制音频保留、导出、删除与同步",
@@ -324,7 +324,7 @@ const translations = {
     roadmap: {
       label: "路线图",
       title: "现在是早期原型，下一步是更深的个人伙伴。",
-      subtitle: "DayLog 仍在形成中。目标是在广泛发布前，先做出一个值得信任的个人记忆系统。",
+      subtitle: "EverLog 仍在形成中。目标是在广泛发布前，先做出一个值得信任的个人记忆系统。",
       one: {
         phase: "原型",
         title: "本地捕捉与转写",
@@ -343,11 +343,11 @@ const translations = {
     },
     cta: {
       label: "产品笔记",
-      title: "DayLog 背后的产品思考。",
-      body: "DayLog 还在主动形成中。这些笔记让首页保持干净，同时把产品原则、隐私模型和使用场景沉淀下来。",
+      title: "EverLog 背后的产品思考。",
+      body: "EverLog 还在主动形成中。这些笔记让首页保持干净，同时把产品原则、隐私模型和使用场景沉淀下来。",
       card: {
         one: {
-          title: "DayLog 为什么存在",
+          title: "EverLog 为什么存在",
           body: "一个不要求你养成新习惯的记忆层。"
         },
         two: {
@@ -367,7 +367,7 @@ const translations = {
   }
 };
 
-const storageKey = "daylog-language";
+const storageKey = "everlog-language";
 const supportedLanguages = ["en", "zh"];
 
 function getNestedValue(source, path) {
