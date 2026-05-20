@@ -1,38 +1,9 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>DayLog Privacy — Temporary audio, durable memory</title>
-  <meta name="description" content="DayLog privacy principles: on-device transcription where possible, temporary raw audio by default, and user-controlled cloud features.">
-  <meta name="theme-color" content="#08111f">
-  <link rel="stylesheet" href="/styles.css">
-</head>
-<body class="note-page">
-  <div class="page-shell">
-    <header class="site-header" aria-label="Primary navigation">
-      <a class="brand" href="/" aria-label="DayLog home">
-        <span class="brand-mark" aria-hidden="true">
-          <svg viewBox="0 0 36 36" role="img" aria-label="DayLog mark">
-            <path d="M18 3.6c6.4 0 11.8 4.9 12.5 11.3.8 7.3-4.6 14.1-12.5 17.5C10.1 29 4.7 22.2 5.5 14.9 6.2 8.5 11.6 3.6 18 3.6Z" fill="currentColor" opacity=".18"/>
-            <path d="M12.1 18.4c2.2 0 3.2-7.2 5.9-7.2 2.7 0 3.7 13.6 5.9 13.6 1.6 0 2.5-4.1 3.9-6.4" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-        </span>
-        <span>DayLog</span>
-      </a>
-      <nav class="nav-links" aria-label="Page sections">
-        <a href="/#how">How it works</a>
-        <a href="/#features">Features</a>
-        <a href="/#privacy">Privacy</a>
-        <a href="/#roadmap">Roadmap</a>
-        <a href="/#notes">Notes</a>
-      </nav>
-      <div class="header-actions">
-        <a class="header-cta" href="/#notes">Read notes</a>
-      </div>
-    </header>
+---
+import SiteLayout from "../../layouts/SiteLayout.astro";
+---
 
-    <main>
+<SiteLayout title="DayLog Privacy — Temporary audio, durable memory" description="DayLog privacy principles: on-device transcription where possible, temporary raw audio by default, and user-controlled cloud features." bodyClass="note-page">
+  <main>
       <section class="note-hero">
         <div class="container">
           <div class="note-breadcrumb"><a href="/">DayLog</a><span>/</span><a href="/#notes">Product notes</a></div>
@@ -74,13 +45,4 @@
         </div>
       </section>
     </main>
-
-    <footer class="site-footer">
-      <div class="container footer-inner">
-        <span>DayLog</span>
-        <span>Searchable private memory · coming soon</span>
-      </div>
-    </footer>
-  </div>
-</body>
-</html>
+</SiteLayout>

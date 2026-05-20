@@ -1,0 +1,41 @@
+---
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import "../styles/global.css";
+
+interface Props {
+  title: string;
+  description: string;
+  bodyClass?: string;
+  isHome?: boolean;
+  includeAppJs?: boolean;
+}
+
+const {
+  title,
+  description,
+  bodyClass = "",
+  isHome = false,
+  includeAppJs = false,
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta name="theme-color" content="#08111f" />
+    {includeAppJs && <script is:inline>document.documentElement.classList.add("js");</script>}
+    {includeAppJs && <script src="/app.js" defer></script>}
+  </head>
+  <body class={bodyClass}>
+    <div class="page-shell">
+      <Header isHome={isHome} />
+      <slot />
+      <Footer isHome={isHome} />
+    </div>
+  </body>
+</html>

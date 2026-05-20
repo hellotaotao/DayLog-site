@@ -1,0 +1,14 @@
+---
+interface Props {
+  isHome?: boolean;
+}
+
+const { isHome = false } = Astro.props;
+---
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <span>DayLog</span>
+    <span data-i18n={isHome ? "footer.copy" : undefined}>Searchable private memory · coming soon</span>
+  </div>
+</footer>

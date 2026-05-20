@@ -1,31 +1,41 @@
-# DayLog Static Landing Page
+# DayLog Site
 
-A polished bilingual static landing page for the early DayLog product prototype.
+A minimal Astro site for the early DayLog product prototype.
 
-## Files
+## Project structure
 
-- `index.html` — semantic landing page markup
-- `styles.css` — responsive premium SaaS styling, gradients, cards, and motion
-- `app.js` — language detection, language toggle, localStorage persistence, and reveal animation
+- `src/pages/` — Astro routes for `/`, `/concept/`, `/privacy/`, and `/notes/without-another-habit/`
+- `src/layouts/SiteLayout.astro` — shared HTML shell, metadata, header, footer, and optional homepage script loading
+- `src/components/` — shared header and footer components
+- `src/styles/global.css` — migrated global styling from the static site
+- `public/app.js` — homepage language toggle, language persistence, and reveal animation
+- `public/robots.txt` and `public/sitemap.xml` — static SEO files copied by Astro
 
 ## Run locally
 
-No framework or build step is required.
-
 ```bash
-python3 -m http.server 4173
+npm install
+npm run dev
 ```
 
 Then open:
 
 ```text
-http://localhost:4173
+http://localhost:4321
 ```
+
+## Build
+
+```bash
+npm run build
+```
+
+Vercel can build the project with the `build` script, which runs `astro build`.
 
 ## Language behavior
 
-- On first visit, the page uses Simplified Chinese when `navigator.language` starts with `zh`; otherwise it uses English.
-- The top-right `English / 中文` control switches language without reloading.
+- On first visit, the homepage uses Simplified Chinese when `navigator.language` starts with `zh`; otherwise it uses English.
+- The top-right `English / 中文` control switches the homepage language without reloading.
 - The selected language is persisted in `localStorage` under `daylog-language`.
 
 ## Product notes and SEO pages
